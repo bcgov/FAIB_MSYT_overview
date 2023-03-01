@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section - 36 Residual Stand Components | Analysis_Report</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section - 36 Residual Stand Components | Analysis_Report" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section - 36 Residual Stand Components | Analysis_Report" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="34-data_sources.html"/>
+<link rel="next" href="37-pspl_process.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">FAIB MSYT Process Documentation</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Cover</a></li>
+<li class="chapter" data-level="2" data-path="01-outline.html"><a href="01-outline.html"><i class="fa fa-check"></i><b>2</b> Topics Covered</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="01-outline.html"><a href="01-outline.html#background"><i class="fa fa-check"></i><b>2.1</b> - Background</a></li>
+<li class="chapter" data-level="2.2" data-path="01-outline.html"><a href="01-outline.html#previous-approaches"><i class="fa fa-check"></i><b>2.2</b> - Previous Approaches</a></li>
+<li class="chapter" data-level="2.3" data-path="01-outline.html"><a href="01-outline.html#results-based-approach"><i class="fa fa-check"></i><b>2.3</b> - RESULTS based approach</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="02-acknowledgements.html"><a href="02-acknowledgements.html"><i class="fa fa-check"></i><b>3</b> Acknowledgements</a></li>
+<li class="chapter" data-level="4" data-path="03-background.html"><a href="03-background.html"><i class="fa fa-check"></i><b>4</b> Background</a></li>
+<li class="chapter" data-level="5" data-path="04-previous_approaches.html"><a href="04-previous_approaches.html"><i class="fa fa-check"></i><b>5</b> Previous Approaches</a></li>
+<li class="chapter" data-level="6" data-path="05-results_approach.html"><a href="05-results_approach.html"><i class="fa fa-check"></i><b>6</b> RESULTS Approach</a></li>
+<li class="chapter" data-level="7" data-path="06-Opening_aggregate.html"><a href="06-Opening_aggregate.html"><i class="fa fa-check"></i><b>7</b> Aggregate to Opening</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="06-Opening_aggregate.html"><a href="06-Opening_aggregate.html#simple-opening"><i class="fa fa-check"></i><b>7.1</b> Simple Opening</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="07-Opening_aggregate_2.html"><a href="07-Opening_aggregate_2.html"><i class="fa fa-check"></i><b>8</b> Opening Aggregate (2)</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="07-Opening_aggregate_2.html"><a href="07-Opening_aggregate_2.html#planting-data"><i class="fa fa-check"></i><b>8.1</b> Planting Data</a></li>
+<li class="chapter" data-level="8.2" data-path="07-Opening_aggregate_2.html"><a href="07-Opening_aggregate_2.html#forest-cover-data"><i class="fa fa-check"></i><b>8.2</b> Forest Cover Data</a></li>
+<li class="chapter" data-level="8.3" data-path="07-Opening_aggregate_2.html"><a href="07-Opening_aggregate_2.html#applied-to-the-feature"><i class="fa fa-check"></i><b>8.3</b> Applied to the feature</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="08-stand_types_1.html"><a href="08-stand_types_1.html"><i class="fa fa-check"></i><b>9</b> Stand Types</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="08-stand_types_1.html"><a href="08-stand_types_1.html#terminology"><i class="fa fa-check"></i><b>9.1</b> Terminology</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="09-stand_types_managed.html"><a href="09-stand_types_managed.html"><i class="fa fa-check"></i><b>10</b> Stand Types: Managed</a></li>
+<li class="chapter" data-level="11" data-path="10-MSYT_process_overview.html"><a href="10-MSYT_process_overview.html"><i class="fa fa-check"></i><b>11</b> FAIB MSYT Main Process Flow</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="10-MSYT_process_overview.html"><a href="10-MSYT_process_overview.html#planted-component"><i class="fa fa-check"></i><b>11.1</b> Planted Component</a></li>
+<li class="chapter" data-level="11.2" data-path="10-MSYT_process_overview.html"><a href="10-MSYT_process_overview.html#natural-component"><i class="fa fa-check"></i><b>11.2</b> Natural Component</a></li>
+<li class="chapter" data-level="11.3" data-path="10-MSYT_process_overview.html"><a href="10-MSYT_process_overview.html#assess-for-ingressmortality"><i class="fa fa-check"></i><b>11.3</b> Assess for Ingress/Mortality</a></li>
+<li class="chapter" data-level="11.4" data-path="10-MSYT_process_overview.html"><a href="10-MSYT_process_overview.html#gy-model-inputs"><i class="fa fa-check"></i><b>11.4</b> GY Model inputs</a></li>
+<li class="chapter" data-level="11.5" data-path="10-MSYT_process_overview.html"><a href="10-MSYT_process_overview.html#yield-tables"><i class="fa fa-check"></i><b>11.5</b> Yield Tables</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="11-gy_model_inputs.html"><a href="11-gy_model_inputs.html"><i class="fa fa-check"></i><b>12</b> GY Model Inputs</a></li>
+<li class="chapter" data-level="13" data-path="12-planted_inputs.html"><a href="12-planted_inputs.html"><i class="fa fa-check"></i><b>13</b> Planting Inputs</a></li>
+<li class="chapter" data-level="14" data-path="13-planting_delay.html"><a href="13-planting_delay.html"><i class="fa fa-check"></i><b>14</b> Planting Delay</a></li>
+<li class="chapter" data-level="15" data-path="14-planted_percent.html"><a href="14-planted_percent.html"><i class="fa fa-check"></i><b>15</b> Planted Percent</a></li>
+<li class="chapter" data-level="16" data-path="15-forest_cover_layer.html"><a href="15-forest_cover_layer.html"><i class="fa fa-check"></i><b>16</b> Forest Cover Layers</a></li>
+<li class="chapter" data-level="17" data-path="16-forest_cover_inv.html"><a href="16-forest_cover_inv.html"><i class="fa fa-check"></i><b>17</b> Forest Cover INV</a></li>
+<li class="chapter" data-level="18" data-path="17-forest_cover_species.html"><a href="17-forest_cover_species.html"><i class="fa fa-check"></i><b>18</b> Forest Cover Species</a></li>
+<li class="chapter" data-level="19" data-path="18-forest_cover_layer_processing.html"><a href="18-forest_cover_layer_processing.html"><i class="fa fa-check"></i><b>19</b> Forest cover layer processing</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="18-forest_cover_layer_processing.html"><a href="18-forest_cover_layer_processing.html#keep-only-the-i-layers"><i class="fa fa-check"></i><b>19.1</b> Keep only the I layers</a></li>
+<li class="chapter" data-level="19.2" data-path="18-forest_cover_layer_processing.html"><a href="18-forest_cover_layer_processing.html#keep-only-attribution-requried-to-derive-weighted-stand-description"><i class="fa fa-check"></i><b>19.2</b> keep only attribution requried to derive weighted stand description</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="19-forest_cover_weighted_species.html"><a href="19-forest_cover_weighted_species.html"><i class="fa fa-check"></i><b>20</b> Forest Cover Species</a></li>
+<li class="chapter" data-level="21" data-path="20-multi_layer_stands.html"><a href="20-multi_layer_stands.html"><i class="fa fa-check"></i><b>21</b> Multi Layered Stands</a></li>
+<li class="chapter" data-level="22" data-path="21-multi_stand_types.html"><a href="21-multi_stand_types.html"><i class="fa fa-check"></i><b>22</b> Identifying Multi Layers</a></li>
+<li class="chapter" data-level="23" data-path="22-adjusting_stand_composition.html"><a href="22-adjusting_stand_composition.html"><i class="fa fa-check"></i><b>23</b> Adjusting Stand Composition</a></li>
+<li class="chapter" data-level="24" data-path="23-ingress_mortality.html"><a href="23-ingress_mortality.html"><i class="fa fa-check"></i><b>24</b> Ingress: Mortality</a></li>
+<li class="chapter" data-level="25" data-path="24-ingress_high_mortality.html"><a href="24-ingress_high_mortality.html"><i class="fa fa-check"></i><b>25</b> Ingress: High Mortality</a></li>
+<li class="chapter" data-level="26" data-path="25-ingres_ingress.html"><a href="25-ingres_ingress.html"><i class="fa fa-check"></i><b>26</b> Ingress</a></li>
+<li class="chapter" data-level="27" data-path="26-validation.html"><a href="26-validation.html"><i class="fa fa-check"></i><b>27</b> Validation: Plant Natural</a></li>
+<li class="chapter" data-level="28" data-path="27-yields_managed.html"><a href="27-yields_managed.html"><i class="fa fa-check"></i><b>28</b> Yields: managed</a></li>
+<li class="chapter" data-level="29" data-path="29-aggregate_yields_rolling.html"><a href="29-aggregate_yields_rolling.html"><i class="fa fa-check"></i><b>29</b> Yield Aggregates</a></li>
+<li class="chapter" data-level="30" data-path="30-aggregate_inputs.html"><a href="30-aggregate_inputs.html"><i class="fa fa-check"></i><b>30</b> Aggregate Inputs for TSR”</a></li>
+<li class="chapter" data-level="31" data-path="31-ysm_volumes.html"><a href="31-ysm_volumes.html"><i class="fa fa-check"></i><b>31</b> YSM Validation: Yield</a></li>
+<li class="chapter" data-level="32" data-path="32-ysm_plots.html"><a href="32-ysm_plots.html"><i class="fa fa-check"></i><b>32</b> YSM Plots</a></li>
+<li class="chapter" data-level="33" data-path="33-summary.html"><a href="33-summary.html"><i class="fa fa-check"></i><b>33</b> Summary</a>
+<ul>
+<li class="chapter" data-level="33.1" data-path="33-summary.html"><a href="33-summary.html#summary-what-we-use"><i class="fa fa-check"></i><b>33.1</b> Summary: WHAT WE USE</a></li>
+<li class="chapter" data-level="33.2" data-path="33-summary.html"><a href="33-summary.html#summary-what-we-do-not-use"><i class="fa fa-check"></i><b>33.2</b> Summary: WHAT WE DO NOT USE</a></li>
+</ul></li>
+<li class="chapter" data-level="34" data-path="33-summary2.html"><a href="33-summary2.html"><i class="fa fa-check"></i><b>34</b> Other Topics</a></li>
+<li class="chapter" data-level="35" data-path="34-data_sources.html"><a href="34-data_sources.html"><i class="fa fa-check"></i><b>35</b> MSYT Data Sources</a>
+<ul>
+<li class="chapter" data-level="35.1" data-path="34-data_sources.html"><a href="34-data_sources.html#bcgw"><i class="fa fa-check"></i><b>35.1</b> BCGW</a></li>
+</ul></li>
+<li class="chapter" data-level="36" data-path="36-residuals.html"><a href="36-residuals.html"><i class="fa fa-check"></i><b>36</b> Residual Stand Components</a>
+<ul>
+<li class="chapter" data-level="36.1" data-path="36-residuals.html"><a href="36-residuals.html#processing-per-1987-stands"><i class="fa fa-check"></i><b>36.1</b> Processing per 1987 stands</a></li>
+<li class="chapter" data-level="36.2" data-path="36-residuals.html"><a href="36-residuals.html#processing-for-non-harvested-areas"><i class="fa fa-check"></i><b>36.2</b> Processing for non harvested areas</a></li>
+<li class="chapter" data-level="36.3" data-path="36-residuals.html"><a href="36-residuals.html#procesing-results-data"><i class="fa fa-check"></i><b>36.3</b> Procesing RESULTS data</a></li>
+<li class="chapter" data-level="36.4" data-path="36-residuals.html"><a href="36-residuals.html#classification-manual"><i class="fa fa-check"></i><b>36.4</b> Classification Manual:</a></li>
+</ul></li>
+<li class="chapter" data-level="37" data-path="37-pspl_process.html"><a href="37-pspl_process.html"><i class="fa fa-check"></i><b>37</b> PSPL Process 2022</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="residual-stand-components" class="section level1 hasAnchor" number="36">
+<h1><span class="header-section-number">Section - 36</span> Residual Stand Components<a href="36-residuals.html#residual-stand-components" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Residual Stand Structure</p>
+<p>It has long been an established practice to leave certain trees standing after harvest. This can be for a variety of reasons such as wildlife trees.</p>
+<p><img src="images/residual.PNG" /></p>
+<p>For the most part, this part of a stand is ignored for the purposes of developing a MSYT. But it is good to be aware of the structure that is captured in both VRI and in RESULTS.</p>
+<p>In the VRI, rank is used to identify what the classifier thinks will be the crop trees. This is governed by the crown closure of each layer seen by the classifier. There are also rules in place:</p>
+<ol style="list-style-type: decimal">
+<li><p>Rank is already pre-determined for records with FIP and LVI inventory standard code</p></li>
+<li><p>For none FIP and LVI records, the first layer of a polygon (ordered by ascending layer_id) that has an crown closure greater than 10 and is not a D layer is assigned rank 1</p></li>
+<li><p>For polygons with no layers with a crown closure above 10, the layer with the largest crown closure and is not a D layer is assigned as rank 1.</p></li>
+</ol>
+<p>So there are cases where the residual layer will get assigned rank 1. In an opening, this can sometimes be seen as:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Opening Id</th>
+<th align="left">Feature Id</th>
+<th align="left">proj_age_1</th>
+<th align="left">vri_live_stems_per_ha</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">101</td>
+<td align="left">1</td>
+<td align="left">155</td>
+<td align="left">80</td>
+</tr>
+<tr class="even">
+<td align="left">101</td>
+<td align="left">2</td>
+<td align="left">12</td>
+<td align="left">1200</td>
+</tr>
+<tr class="odd">
+<td align="left">101</td>
+<td align="left">3</td>
+<td align="left">14</td>
+<td align="left">800</td>
+</tr>
+</tbody>
+</table>
+<p>But the feature needs to be checked to see if there are multiple layers. This is found in the veg_comp_layer table. So fot veg_Comp this can be seen as:</p>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+<col width="20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Feature Id</th>
+<th align="left">Opening Id</th>
+<th align="left">proj_age_1</th>
+<th align="left">vri_live_stems_per_ha</th>
+<th align="left"># layers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">101</td>
+<td align="left">255</td>
+<td align="left">65</td>
+<td align="left">2</td>
+</tr>
+</tbody>
+</table>
+<p>This gives the indication that there is some layered structure. We would expect this stand to have a young age as it is within an opening. We would also expect the density to represent a planted stand.</p>
+<p>Since the age and the density seem to not represent a managed stand, they we can presume that the rank 1 layer was assigned to a residual component.</p>
+<div id="processing-per-1987-stands" class="section level2 hasAnchor" number="36.1">
+<h2><span class="header-section-number">36.1</span> Processing per 1987 stands<a href="36-residuals.html#processing-per-1987-stands" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>filter for a single feature opening</li>
+<li>if sph &lt; 75 kick it out (low denisty)</li>
+</ul>
+</div>
+<div id="processing-for-non-harvested-areas" class="section level2 hasAnchor" number="36.2">
+<h2><span class="header-section-number">36.2</span> Processing for non harvested areas<a href="36-residuals.html#processing-for-non-harvested-areas" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>look for age split between &lt;50 and &gt; 50</li>
+<li>check to see if there are multiple layers in each feature</li>
+<li>if there is only a single layer, then accept the age</li>
+<li>assign the older portion as non harvest</li>
+</ul>
+</div>
+<div id="procesing-results-data" class="section level2 hasAnchor" number="36.3">
+<h2><span class="header-section-number">36.3</span> Procesing RESULTS data<a href="36-residuals.html#procesing-results-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>the delineation of multi layers is based on the number of layers</li>
+</ul>
+</div>
+<div id="classification-manual" class="section level2 hasAnchor" number="36.4">
+<h2><span class="header-section-number">36.4</span> Classification Manual:<a href="36-residuals.html#classification-manual" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The standard now is that a polygon with 5% or greater CC will result in a BCLCS of VT, however I believe that 10% was the threshold in the past. As explained by Marc, the RESULTS reader in VRIMS defaults to 11% so that they are recognizable as RESULTS records (classifiers don’t usually report to 1%). As the threshold for VT is now 5%, we could make RESULTS polygons default to say 6%. When surveyors provide crown closures for very young stands, they are often less than 5%. As RESULTS ‘I’ standard records do not contain any Non-Tree/Non-Vegetated data, a crown closure of &lt; 5% will result in a BCLCS of NLU, which then also effectively removes it from the FHLB (BCLCS1 = N -&gt; FHLB = N).</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="34-data_sources.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="37-pspl_process.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subssection",
+"scroll_highligt": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

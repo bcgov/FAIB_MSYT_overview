@@ -1,0 +1,108 @@
+Slide Commentary
+0 - Opening Title Slide
+	- making a silk purse out of a sow's ear
+1 - Topics covered
+	- RESULTS drive process for creating MSYTs
+	- some detail of the process
+	- more detail is available
+2 - acknowledgements
+	- cast of characters involved
+3 - How this all came about
+	- in general, most things seem easy
+	- until you get into the details
+4 - Previous Approaches
+	- many differing derivations of producing yields
+	- some district staff were heavily involved
+5 - RESULTS approach
+	- provincial
+	- standardized
+	- can be modified to address issues
+6 - Aggregate to Opening
+	- everything is derived at the opening
+7 - BUT site index information is joined to feature_id
+	- species composition is derived at opening
+	- site index is assigned at the feature
+8e - stand types
+	- existing natural -> VDYP
+	- existing managed -> MSYT
+	- excluded
+		- Alpine, BG
+	- no site index exclusion
+	- testing with BTC to see how this works
+8m - stand types managed
+	- special category pre 87 stands
+9 - Process Flow simplified
+	- where data comes from
+	- assessment for ingress/mortality
+	- builds MSYT input tables in a method that combines
+		- planted and natural
+		- conifer and deciduous
+		- handles pre87 stands using backgrow
+10 - format for BTC	
+	- csv
+11 - deriving planted inputs
+		- from activity table
+		- get # planted & area 
+		- join to GW
+		- assume that the individual activities are spatially separate
+		- area weighted by species
+			- species composition	
+			- density
+			- genetic worth
+12 - 
+13 - planting delay
+	- this is NOT regen delay
+	- simply difference between harvest and planting dates
+	- regen delay has many connotations to many people so we don't use it
+	- in an MSYT, planting delay is simply an offset on x axis to start the MSYT
+14 - Planted Percent
+	- determines based on net area from FC how much of the opening was planted
+	- loosely related to NAR
+	- planted % is now modelled in BTC
+15 - Forest Cover
+	- how we determine what has happened between planting and survey time
+	- survey is a measure of total species counts
+16 - INV vs SILV
+	- well spaced is a concept used for assessing free growing obligation release
+	- it has no place in MSYTs
+	- all growth models require total stems
+	- issue is being discussed within the silviculture surveys folk right now
+17 - Forest Cover provides us with the natural composition after planting
+	- sort for things like
+		- non productive
+		- incomplete
+		- residuals
+		- grouped retention
+	- classify features that are NOT assigned a MSYT
+18 - layer processing
+19 - weighted composition
+20 - identify multi cohort stands
+21 - multi cohorts left to analyst to determine yield
+22
+23 - when a planted species does not show up in the survey
+24 - high mortality of species -> treat as natural
+	- coast < 400
+	- interior < 600
+25 - true ingress
+	- can't model this
+26 - Validation Review
+	- tagged features for the analyst to review
+	- if not fixed, they go on a natural aggregate
+27 - thinking back to 8m with the various categories
+	- need to assign both a current and future yield
+
+29 - development of aggregate curves
+	- using a rolling 15 year time frame
+	- ignore the latest 5 years
+	- summarize BY BEC
+	- may have to adjust this in some interior units
+30 - aggregate species compostion
+	- tsa weighted
+	- joined to PSPL site index
+31 - YSM volume to MSYT volume comparison
+	- MSYT for each plot
+	- average them all together
+	- TASS vs BTC
+	- feature_id vs opening
+32 - YSM with remeasured plot
+33 - 
