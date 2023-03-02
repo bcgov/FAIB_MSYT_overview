@@ -1,6 +1,6 @@
 # Summary
 
-![](images/process.PNG)
+![](images/process.png)
 
 ## Summary: WHAT WE USE
 
