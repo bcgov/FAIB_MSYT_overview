@@ -1,7 +1,7 @@
 # FAIB MSYT Main Process Flow
 
 
-![](Images/process.png)
+![](image/process.png)
 
 Figure 1.  MSYT Process Flow
 
