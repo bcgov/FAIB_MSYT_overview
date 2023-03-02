@@ -2,6 +2,8 @@
 ## FAIB MSYT Process
 ### Description and Usage
 
+This provides an overview of the FAIB MSYT process.  It is not intended to be stand alone bu tinteanded to give a general overview of the process.
+
 
 The code in this GitHub is open-source and provides a transparent record of the FAIB MSYT process. Anyone is free to download. However, this is not a self-contained piece of software. 
 
